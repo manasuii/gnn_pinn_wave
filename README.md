@@ -1,4 +1,4 @@
-.# GNN-PINN Wave Propagation
+ GNN-PINN Wave Propagation
 
 <div align="center">
 
