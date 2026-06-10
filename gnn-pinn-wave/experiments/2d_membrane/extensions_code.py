@@ -40,7 +40,7 @@ T2D       = 30        # time steps
 C2D       = 1.0       # wave speed
 HIDDEN2D  = 64
 FREQS2D   = 16
-EPOCHS2D  = 3000
+EPOCHS2D  = 36000
 
 print("=" * 65)
 print("MODULE 1: 2D Membrane Wave on Irregular Mesh")
