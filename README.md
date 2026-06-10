@@ -1,1 +1,2 @@
-# gnn_pinn_wave
+GNN-PINN Wave Propagation
+<div align="center">
