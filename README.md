@@ -153,14 +153,7 @@ gnn-pinn-wave/
 │   │   ├── mlp_model_FINAL.pt         ← final MLP-PINN weights
 │   │   ├── checkpoint_window_1.pt     ← GNN per-window checkpoints
 │   │   └── ...
-│   │
-│   └── metrics.json                   ← all Rel-L2 results
-│
-├── paper/
-│   └── gnn_pinn_paper_COMPLETE.tex    ← LaTeX source
-│
-└── notebooks/
-    └── reproduce_results.ipynb        ← step-by-step Jupyter notebook
+
 ```
 
 ---
@@ -170,7 +163,7 @@ gnn-pinn-wave/
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/gnn-pinn-wave.git
+git clone https://github.com/[manasuii]/gnn-pinn-wave.git
 cd gnn-pinn-wave
 ```
 
@@ -285,10 +278,7 @@ Each paper figure maps to a specific script:
 | MLP-PINN 1D (36k epochs) | ~6-10 hrs | ~1-2 hrs |
 | 2D extension (all modules) | ~4-6 hrs | ~1-2 hrs |
 
-> **Tip:** Run GNN-PINN and MLP-PINN in parallel on two
-> separate terminals or Kaggle notebooks to halve total time.
 
----
 
 ## Model Architecture
 
@@ -377,24 +367,6 @@ matplotlib>=3.5.0       — plotting and figure generation
 
 ---
 
-## Citation
-
-If you use this code or paper in your research, please cite:
-
-```bibtex
-@article{[yourname]2025gnnpinn,
-  title   = {When Does Graph Structure Help in
-             Physics-Informed Neural Networks?
-             A Comparative Study on Elastic Wave Propagation
-             in Heterogeneous Mechanical Structures},
-  author  = {[Your Full Name]},
-  journal = {arXiv preprint arXiv:2506.XXXXX},
-  year    = {2025},
-  url     = {https://arxiv.org/abs/2506.XXXXX}
-}
-```
-
----
 
 ## Acknowledgements
 
@@ -413,12 +385,7 @@ See [LICENSE](LICENSE) for details.
 
 ---
 
-## Contact
 
-**[Your Name]**
-[Your Department], [Your University]
-📧 [your.email@university.edu]
-🔗 [https://github.com/YOUR-USERNAME](https://github.com/YOUR-USERNAME)
 
 *Found a bug or have a question? Please open an
 [issue](https://github.com/YOUR-USERNAME/gnn-pinn-wave/issues).*
