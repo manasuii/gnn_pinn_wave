@@ -11,7 +11,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**[Your Name]** — [Your University], Kathmandu, Nepal
+
 
 </div>
 
