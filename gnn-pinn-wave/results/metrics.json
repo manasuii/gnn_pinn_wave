@@ -1,0 +1,40 @@
+{
+  "description": "All Rel-L2 results from GNN-PINN vs MLP-PINN comparison",
+  "paper": "When Does Graph Structure Help in Physics-Informed Neural Networks?",
+  "metric": "Relative L2 error = ||u_pred - u_ref||_2 / ||u_ref||_2",
+  "training_epochs": 36000,
+  "note": "All experiments use equal training budgets for fair comparison",
+
+  "results": {
+    "1d_uniform_rod": {
+      "description": "1D wave eq, c=1.0 everywhere, exact solution sin(pi*x)cos(pi*t)",
+      "GNN_PINN_mean": 0.1061,
+      "MLP_PINN": 0.2900,
+      "winner": "GNN-PINN",
+      "improvement_factor": 2.7
+    },
+    "1d_bimetallic_rod": {
+      "description": "1D wave eq, c1=1.0 / c2=1.5, smooth sigmoid interface at x=0.5",
+      "GNN_PINN_mean": 0.2456,
+      "MLP_PINN": 0.0024,
+      "winner": "MLP-PINN",
+      "improvement_factor": 102
+    },
+    "2d_membrane": {
+      "description": "2D wave eq on irregular Delaunay mesh (~180 nodes), c=1.0",
+      "GNN_PINN_mean": 0.8552,
+      "MLP_PINN": 0.0116,
+      "winner": "MLP-PINN",
+      "improvement_factor": 74
+    }
+  },
+
+  "aggregation_comparison_2d": {
+    "description": "GNN aggregation strategies on 2D membrane (2000 epochs each)",
+    "MLP_PINN_baseline": 0.0116,
+    "GNN_mean": 0.8552,
+    "GNN_max": "[fill after running extensions_code.py]",
+    "GNN_sum": "[fill after running extensions_code.py]",
+    "GNN_attention_GAT": "[fill after running extensions_code.py]"
+  }
+}

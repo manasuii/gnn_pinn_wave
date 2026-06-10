@@ -1,0 +1,30 @@
+.# ================================================================
+# GNN-PINN Wave Propagation — Requirements
+# ================================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# For PyTorch Geometric, also run:
+#   pip install torch-scatter torch-sparse -f \
+#       https://data.pyg.org/whl/torch-2.0.0+cpu.html
+#
+# CUDA users: replace +cpu with +cu118 or +cu121
+# ================================================================
+
+# ── Core deep learning ───────────────────────────────────────
+torch>=1.12.0
+torchvision>=0.13.0
+
+# ── Graph Neural Networks ────────────────────────────────────
+# PyTorch Geometric — message passing, GATConv, etc.
+torch-geometric>=2.0.0
+
+# ── Scientific computing ─────────────────────────────────────
+numpy>=1.22.0
+scipy>=1.8.0
+
+# ── Visualisation ────────────────────────────────────────────
+matplotlib>=3.5.0
+
+# ── Utilities ────────────────────────────────────────────────
+tqdm>=4.64.0
